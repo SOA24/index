@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>venta</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header style="font-size: 40px;">
+        <center><h1 id="produc"> <strong class="shadow-sm p-3 mb-5 bg-danger rounded">ARTICULOS A LA VENTA</strong> </h1></center>
+        <nav id="nevventa" class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>                
+                <button class="btn btn-success position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">compras
+                    <span id="span1" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        0
+                    </span>
+                </button>
+            </div>
+        </nav>
+        
+    </header>
+    <main class="container-fluid">
+        <article class="container-fluid">
+            <pre>
+                <center>
+                    <table border="1" class="table table-danger">
+                        <TBody>
+                            <TR>
+                                <TD><strong>Nombre</strong></TD>
+                                <TD><strong>Precio</strong></TD>
+                                <td><strong>producto</strong></td>
+                                <td><strong>Contenido</strong></td>
+                                <td><strong>Compra</strong></td>
+                            </TR>
+                            <TR>
+                                
+                                <TD id="nombre">Coca-Cola</TD>
+                                <TD id="costo">6bs.</TD>
+                                <td><img id="soft-1"  height="150px" width="150px"  src="https://images.rappi.com.uy/products/398736-1614012503349.png?d=136x136&e=webp" alt="error"></td>
+                                <td id="Contenido">bebida de 600ml</td>
+                                <td > <a id="btncomp1" href="#"> <img  src="https://cdn-icons-png.flaticon.com/128/6493/6493710.png" alt="ERROR" ></a></td>
+                            </TR>
+    
+                            <TR>
+                                <TD id="nombre2">fanta</TD>
+                                <TD id="costo2">5bs.</TD>
+                                <TD><img id="soft-2" height="150px" width="150px" src="https://www.pngplay.com/wp-content/uploads/12/Fanta-No-Background-Clip-Art.png" alt=" error"></TD>
+                                <td id="Contenido2">bebida de 500ml</td>
+                                <td> <a id="btncomp2" href="#"> <img  src="https://cdn-icons-png.flaticon.com/128/6493/6493710.png" alt="ERROR" ></a></td>
+                            </TR>
+                            <TR>
+                                <TD id="nombre3">sprite</TD>
+                                <TD id="costo3">6bs.</TD>
+                                <TD><img id="soft-3" height="150px" width="150px" src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c1ed.png" alt="error"></TD>
+                                <td id="Contenido3">bebida de 500ml</td>
+                                <td> <a id="btncomp3" href="#"> <img  src="https://cdn-icons-png.flaticon.com/128/6493/6493710.png" alt="ERROR" ></a></td>
+                            </TR>
+                            <TR>
+                                <TD id="nombre4">pepsi</TD>
+                                <TD id="costo4">6bs.</TD>
+                                <TD><img id="soft-4" height="150px" width="150px" src="https://pngimg.es/d/pepsi_PNG8953.png" alt="error"></TD>
+                                <td id="Contenido4">bebida de 500ml</td>
+                                <td> <a id="btncomp4" href="#"> <img  src="https://cdn-icons-png.flaticon.com/128/6493/6493710.png" alt="ERROR" ></a></td>
+                            </TR>
+                            <TR>
+                                <TD>yogurt</TD>
+                                <TD>7bs.</TD>
+                                <TD><img id="soft-5" height="150px" width="150px" src="https://delizia.bo/wp-content/uploads/2021/12/19-2601-yogurt-griego-frutilla-170g.webp" alt="error"></TD>
+                                <td>70gr</td>
+                                <td> <a href="formulario.html" > <img  src="https://cdn-icons-png.flaticon.com/128/6493/6493710.png" alt="ERROR" ></a></td>
+                            </TR>
+                        </TBody>
+                    </table>
+
+                </center>       
+            </pre>
+            <div class="float-start">PROXIMAMENTE MAS PRODUCTOS COMO
+                <div class="overflow-auto"> 
+                    fanta papaya
+                    pepsi
+                    helados
+                    cervesa
+                    Coca-Cola cero
+                    vischani
+                </div>
+            </div>
+
+        </article>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"  aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <table id="tabla" class=" table-bordered">
+                    <thead>
+                        <tr>
+                            <td>Nº</td>
+                            <td>Descripción</td>
+                            <td>Precio</td>
+                        
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <div class="d-grid gap-2">
+                    <a style="font-weight: bold;" href="formulario.html"> <button  type="button" name="" id="btnElim" class="btn btn-primary"></button>COMPRAR</a>
+                   
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="conteiner-fluid">
+        <datails id="detail" class="container-fluid h4">
+            <summary>informacion</summary>
+            Si quiere hacer un pedido  por mayoreo puedo comunicarse con los numeros:
+            <mark>67626063</mark> o
+            <mark>75780275</mark>
+            <p>como ultima opcion puede contactar a nuestras redes <mark>shopdrink@gmail.com</mark></p>
+        </datails>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
+    </script>
+  
+    <script src="/js/bootstrap.min.js">
+    </script>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>
